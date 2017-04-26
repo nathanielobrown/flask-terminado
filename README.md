@@ -5,7 +5,7 @@ Integrates terminado with flask. This gives you a browser-based terminal with mi
 Because the terminal requires websockets, your app can't be run as a WSGI app. Instead, the app should be served with `terminal.run`, rather than using your favorite webserver (gunicorn, uwsgi, waitress, etc.).
 
 ## Basic Example
-```
+```python
 import flask
 from flask_terminado import Terminal
 
