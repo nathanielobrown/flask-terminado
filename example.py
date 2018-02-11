@@ -14,4 +14,4 @@ terminal = Terminal(app)
 terminal.add_terminal('/bash', ['bash'])
 
 if __name__ == '__main__':
-    terminal.run(port=5000)
+    terminal.run(port=5000, host='127.0.0.1')

@@ -46,8 +46,8 @@ class Terminal(object):
         ]
         self.tornado_app = tornado.web.Application(handlers)
 
-    def run(self, port=8889):
-        self.tornado_app.listen(port)
+    def run(self, port=8889, host='127.0.0.1'):
+        self.tornado_app.listen(port, host)
         IOLoop.current().start()
 
 
